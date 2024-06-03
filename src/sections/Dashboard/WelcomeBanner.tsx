@@ -102,9 +102,9 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Welcome to 🅰️TL5️⃣D City Casino #🅰️5️⃣🎰</h1>
+        <h1>Welcome to 🅰️TL5️⃣D City Casino #🅰️5️🎰</h1>
         <p>
-          A fair, simple and decentralized casino on Solana. 1️⃣ Create a <a href="https://phantom.app/">Phantom</a> wallet account. 1️⃣ Buy <a href="https://phantom.app/">$SOL</a> or <a href="https://phantom.app/">$USD</a> with a debit card. 🎰 Instant payouts. ▶️ Subscribe to ATL5️⃣D to receive 1/2 of your monthly losses back in Bitcoin $RNT.
+          A fair, simple and decentralized casino on Solana. 1️⃣ Create a <a href="https://phantom.app/">Phantom</a> wallet account. 1️⃣ Buy <a href="https://phantom.app/">$SOL</a> or <a href="https://phantom.app/">$USD</a> with a debit card. 🎰 Instant payouts. ▶️ Subscribe to ATL5️⃣D Discord to receive 1/2 of your monthly losses back in Bitcoin $RNT.
         </p>
       </div>
       <Buttons>
@@ -114,8 +114,8 @@ export function WelcomeBanner() {
         <button onClick={() => window.open('https://atl5d.com', '_blank')}>
           🅰️ ATL5D
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 ATL5D DISCORD
+        <button onClick={() => window.open('https://discord.com/servers/atl5d-1244450286337003520', '_blank')}>
+          💬 PPV DISCORD
         </button>
       </Buttons>
     </Welcome>
