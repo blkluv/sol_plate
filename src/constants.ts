@@ -1,12 +1,12 @@
 import { PublicKey } from '@solana/web3.js'
-import { FAKE_TOKEN_MINT, PoolToken, TokenMeta, makeHeliusTokenFetcher } from 'gamba-react-ui-v2'
+import { PoolToken, TokenMeta, makeHeliusTokenFetcher } from 'gamba-react-ui-v2'
 
 // Get RPC from the .env file or default to the public RPC.
 export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.mainnet-beta.solana.com'
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9',
+  '49pZ6hCYYEarmmhb3Uvp9VgVfvF824i2mZYnMAhSjkgn',
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -16,10 +16,10 @@ export const EXPLORER_URL = 'https://explorer.gamba.so'
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.01 // 1% (1/100 = 0.01)  !!max 5%!!
+export const PLATFORM_CREATOR_FEE = 0.04 // 4% (4/100 = 0.04)  !!max 5%!!
 
 // Jackpot fee (in %)
-export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1% (0.1/100 = 0.001)
+export const PLATFORM_JACKPOT_FEE = 0.04 // 4% (4/100 = 0.04)
 
 // Just a helper function
 const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): PoolToken => ({
@@ -33,14 +33,10 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  * For private pools, add the creator of the Liquidity Pool as a second argument
  */
 export const POOLS = [
-  // Fake token:
-  lp(FAKE_TOKEN_MINT),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
-  // Wormhole:
-  lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
 ]
 
 // The default token to be selected
@@ -51,23 +47,25 @@ export const DEFAULT_POOL = POOLS[0]
  * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
+  // Example for SOL:
   {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
+    mint: new PublicKey('So11111111111111111111111111111111111111112'),
+    name: 'Solana',
+    symbol: 'SOL',
+    image: '/solana.png',
     baseWager: 1e9,
     decimals: 9,
     usdPrice: 0,
   },
+  // Example for USDC:
   {
-    mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
-    name: 'W',
-    symbol: 'Wormhole',
-    image: 'https://wormhole.com/token.png',
+    mint: new PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
+    name: 'USD Coin',
+    symbol: 'USDC',
+    image: '/usdc.png',
     baseWager: 1e6,
     decimals: 6,
-    usdPrice: 0,
+    usdPrice: 1,
   },
 ]
 
@@ -78,7 +76,7 @@ export const TOS_HTML = `
   <p><b>3. Risk Acknowledgement:</b> Games involve risk; no guaranteed winnings.</p>
   <p><b>4. No Warranty:</b> Games provided "as is"; operate randomly.</p>
   <p><b>5. Limitation of Liability:</b> We're not liable for damages.</p>
-  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for simulation only.</p>
+  <p><b>6. Licensing Disclaimer:</b> Not a licensed casino; for charity only.</p>
   <p><b>7. Fair Play:</b> Games are conducted fairly and transparently.</p>
   <p><b>8. Data Privacy:</b> Your privacy is important to us.</p>
   <p><b>9. Responsible Gaming:</b> Play responsibly; seek help if needed.</p>
@@ -98,3 +96,4 @@ export const TOKEN_METADATA_FETCHER = (
     }
   }
 )()
+

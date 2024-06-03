@@ -102,20 +102,20 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Welcome to Gamba v2 👋</h1>
+        <h1>Welcome to 🅰️TL5️⃣D City Casino #🅰️5️⃣🎰</h1>
         <p>
-          A fair, simple and decentralized casino on Solana.
+          A fair, simple and decentralized casino on Solana. 1️⃣ Create a <a href="https://phantom.app/">Phantom</a> wallet account. 1️⃣ Buy <a href="https://phantom.app/">$SOL</a> or <a href="https://phantom.app/">$USD</a> with a debit card. 🎰 Instant payouts. ▶️ Subscribe to ATL5️⃣D to receive 1/2 of your monthly losses back in Bitcoin $RNT.
         </p>
       </div>
       <Buttons>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-          🚀 Add Liquidity
+        <button onClick={() => window.open('https://www.spatial.io/s/ATLverse-662eb8858ef79a2eef2b8193?share=9164371680450447654', '_blank')}>
+          🚀 ATLVERSE
         </button>
-        <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-          👨‍💻 Build your own
+        <button onClick={() => window.open('https://atl5d.com', '_blank')}>
+          🅰️ ATL5D
         </button>
         <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+          💬 ATL5D DISCORD
         </button>
       </Buttons>
     </Welcome>
