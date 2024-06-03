@@ -104,7 +104,7 @@ export function WelcomeBanner() {
       <div>
         <h1>Welcome to 🅰️TL5️⃣D City Casino #🅰️5️🎰</h1>
         <p>
-          A fair, simple and decentralized casino on Solana. 1️⃣ Create a <a href="https://phantom.app/">Phantom</a> wallet account. 1️⃣ Buy <a href="https://phantom.app/">$SOL</a> or <a href="https://phantom.app/">$USD</a> with a debit card. 🎰 Instant payouts. ▶️ Subscribe to ATL5️⃣D Discord to receive 1/2 of your monthly losses back in Bitcoin $RNT.
+          A fair, simple and decentralized casino on Solana. 1️⃣ Create a <a href="https://phantom.app/"><b>Phantom</b></a> wallet account. 1️⃣ Buy <a href="https://phantom.app/"><b>$SOL</b></a> or <a href="https://phantom.app/"><b>$USD</b></a> with a debit card. 🎰 Instant payouts to Phantom wallet. ▶️ Subscribe to ATL5️⃣D Discord to receive 1/2 of your monthly losses back in Bitcoin $RNT.
         </p>
       </div>
       <Buttons>
