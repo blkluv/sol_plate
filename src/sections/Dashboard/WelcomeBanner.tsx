@@ -115,20 +115,20 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <div>
-        <h1>Welcome to Gamba v2 👋</h1>
+        <h1>Welcome to MetaVegas.live 👋</h1>
         <p>
-          A fair, simple and decentralized casino on Solana.
+         A fair, simple and decentralized social charity casino on Solana. Create a <a href='https://phantom.app/'><b>Phantom</b></a> wallet account. Then buy <a href='https://crypto.link.com?ref=lb&destination_currency=sol&destination_network=solana'><b>$SOL</b></a> or <a href='https://crypto.link.com?ref=lb&destination_currency=usdc&destination_network=solana'><b>$USDC</b></a> to start. <a href='https://nftv.luvnft.com'><b>NFTV</b> Discord subscribers receive 50% of their monthly losses back in Bitcoin L$VE.
         </p>
       </div>
       <Buttons>
         <button onClick={copyInvite}>
           💸 Copy Invite
         </button>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
-          🚀 Add Liquidity
+        <button onClick={() => window.open('https://instagram.com/mvegaslive', '_blank')}>
+          💬 Instagram
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+        <button onClick={() => window.open('https://t.me/mvegaslive', '_blank')}>
+          💬 Telegram
         </button>
       </Buttons>
     </Welcome>
